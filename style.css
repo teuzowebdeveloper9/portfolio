@@ -1,18 +1,19 @@
 html,body{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(to bottom, #0a1120, #1a2a4a); /* Exemplo de gradiente */
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #131925,black ); 
     font-family: "Poppins", sans-serif;
-    font-weight: 800;
     font-style: normal;
     overflow-x: hidden; 
     color: white;
 }
-header{
-    justify-content: center;
-    align-items: center;
+.main{
+    margin: 20px;
+    padding: 1rem;
+    border: 1px solid wheat;
 }
 .brilho-esquerda,
 .brilho-direita {
@@ -20,8 +21,8 @@ header{
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: radial-gradient(circle, #203852 0%, #053cf1 40%, transparent 100%);
-  filter: blur(80px);
+  background: radial-gradient(circle,pink, #be0b32 0%, #ce0d7d 40%, transparent 100%);
+  filter: blur(40px);
   z-index: 0;
 }
 
@@ -36,3 +37,111 @@ header{
   right: -100px;
   transform: translateY(-50%);
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Texto do lado esquerdo */
+  .box-1 {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  header h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Informações abaixo do nome */
+  .informations {
+    font-weight: 350;
+    font-size: 0.95rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .icon {
+    margin-right: 8px;
+    height: 12px;
+    width: 12px;
+    vertical-align: middle;
+  }
+  
+  /* Imagem do lado direito */
+  .box-2 {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box-2 img {
+    width: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+  .acordion{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 1rem;
+  }
+  .acordion .trigger{
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: white;
+  }
+
+  .acordion .content{
+    display: none;
+  }
+  
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .box-2 {
+        margin-top: 20px;
+      }
+      .box-1, .box-2 {
+        flex: unset;
+        width: 100%;
+      }
+    }
+    .brilho-esquerda,
+    .brilho-direita {
+      width: 200px;
+      height: 200px;
+      
+    }
+    .brilho-esquerda{
+        left: 50px;
+    }
+    .brilho-direita{
+        right: 50px;
+    }
+  
+  
