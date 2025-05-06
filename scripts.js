@@ -287,7 +287,7 @@ function switchAgain() {
 
     portfolio.remove()
 
-    insertPortfolio.innerHTML= `<div style="font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; padding: 30px; background-color: #55569E; border-radius: 15px; color: white; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+    insertPortfolio.innerHTML= `<div id="projects"  onclick="backPortfolio()" style="font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; padding: 30px; background-color: #55569E; border-radius: 15px; color: white; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
     <!-- Cabeçalho com seta -->
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 2px dashed rgba(255,255,255,0.3);">
         <h1 style="margin: 0; font-size: 28px;">Portfolio</h1>
@@ -295,7 +295,7 @@ function switchAgain() {
     </div>
 
     <!-- Lista de projetos -->
-    <ul style="list-style: none; padding: 0; margin: 0;">
+    <ul id="projects" onclick="backPortfolio()" style="list-style: none; padding: 0; margin: 0;">
         <!-- Projeto 1 -->
         <li style="margin-bottom: 20px; background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px; display: flex; align-items: center;">
             <img src="images/mini-git.png" alt="GitHub" style="width: 30px; height: 30px; margin-right: 15px;">
@@ -319,7 +319,7 @@ function switchAgain() {
         </li>
 
         <!-- Projeto 3 -->
-        <li style="margin-bottom: 20px; background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px; display: flex; align-items: center;">
+        <li  onclick="backPortfolio()" style="margin-bottom: 20px; background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px; display: flex; align-items: center;">
             <img src="images/mini-git.png" alt="GitHub" style="width: 30px; height: 30px; margin-right: 15px;">
             <div style="flex: 1;">
                 <a href="https://github.com/teuzowebdeveloper9/wiki-git" style="color: white; text-decoration: none; font-weight: bold; font-size: 18px; display: block; margin-bottom: 5px;">
@@ -352,4 +352,22 @@ function switchAgain() {
 
 </div>
     `
+  }
+
+  function backPortfolio(){
+    const projects = document.getElementById('projects')
+
+    projects.remove()
+
+    insertPortfolio.innerHTML = `<section id="portfolio"  style="display: flex; flex-direction: column; margin: 1rem 0; height:70px; width: 100%; border: 1px solid white; border-radius: 1rem;">
+    <div id="insert-here">
+        <button onclick="switchModeThree()" style="width: 100%; font-weight: 700; font-size: 1.5rem; display: flex; flex-direction: row; justify-content: space-between; align-items: center; font-size: 1rem; padding: 1rem 2rem; background-color: transparent; color: white; border: none;">
+            <span>portfolio </span>
+            <img src="images/Group 482294.png" alt="arrow" style="display: inline-block;">
+        </button>
+    </div>
+</section>
+    `
+
+    console.log("back portfolios")
   }
