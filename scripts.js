@@ -70,7 +70,7 @@ function switchAgain() {
     insert.innerHTML = `<section style="display: flex; flex-direction: column; margin: 1rem 0; height:70px; width: 100%; border: 1px solid white; border-radius: 1rem;">
     <div id="insert-here">
         <button onclick="switchMode()" style="width: 100%; font-weight: 700; font-size: 1.5rem; display: flex; flex-direction: row; justify-content: space-between; align-items: center; font-size: 1rem; padding: 1rem 2rem; background-color: transparent; color: white; border: none;">
-            <span>idiomas</span>
+            <span> skills </span>
             <img src="images/Group 482294.png" alt="arrow" style="display: inline-block;">
         </button>
     </div>
@@ -84,7 +84,16 @@ function switchAgain() {
    education.remove()
 
 
-   insertEdu.innerHTML = `<div style="
+   insertEdu.innerHTML = `
+  <div onclick="switchNosyEducation()" style="display: flex; justify-content: space-between; align-items: center;">
+    <span>educação é a base de um bom profissional </span>
+    <img 
+        src="images/Group 482294.png" 
+        alt="seta" 
+        style="width: 50px; height: 40px; transform: rotate(180deg);"
+    >
+</div>
+   <div style="
     font-family: 'Segoe UI', Arial, sans-serif; 
     max-width: 600px; 
     margin: 20px auto; 
@@ -93,7 +102,7 @@ function switchAgain() {
     border-radius: 15px; 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-left: 5px solid #6a5acd;
-">
+" id="nosy-education" onclick="switchNosyEducation()">
     <!-- Título principal -->
     <h1 style="
         color: #6a5acd; 
@@ -106,7 +115,7 @@ function switchAgain() {
     </h1>
     
     <!-- Subtítulo -->
-    <p style="
+    <p onclick="switchNosyEducation()" style="
         font-size: 16px; 
         color: #9370db; 
         margin-bottom: 20px; 
@@ -142,7 +151,7 @@ function switchAgain() {
     </div>
     
     <!-- Seção DIO -->
-    <h2 style="
+    <h2 onclick="switchNosyEducation()" style="
         color: #6a5acd; 
         font-size: 22px; 
         margin: 20px 0 10px 0; 
@@ -241,4 +250,24 @@ function switchAgain() {
 
    console.log('switch the education')
 
+  }
+
+  
+
+  function switchNosyEducation() {
+
+    const nosyEducation = document.getElementById('nosy-education')
+
+    nosyEducation.remove()
+
+    insertEdu.innerHTML = `<section id="education"  style="display: flex; flex-direction: column; margin: 1rem 0; height:70px; width: 100%; border: 1px solid white; border-radius: 1rem;">
+    <div id="insert-here">
+        <button onclick="switchModeTwo()" style="width: 100%; font-weight: 700; font-size: 1.5rem; display: flex; flex-direction: row; justify-content: space-between; align-items: center; font-size: 1rem; padding: 1rem 2rem; background-color: transparent; color: white; border: none;">
+            <span>educação</span>
+            <img src="images/Group 482294.png" alt="arrow" style="display: inline-block;">
+        </button>
+    </div>
+</section>`
+
+  console.log('education back')
   }
