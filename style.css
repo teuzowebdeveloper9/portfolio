@@ -1,0 +1,38 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0a1120, #1a2a4a); /* Exemplo de gradiente */
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    overflow-x: hidden; 
+    color: white;
+}
+header{
+    justify-content: center;
+    align-items: center;
+}
+.brilho-esquerda,
+.brilho-direita {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #203852 0%, #053cf1 40%, transparent 100%);
+  filter: blur(80px);
+  z-index: 0;
+}
+
+.brilho-esquerda {
+  top: 70%;
+  left: -100px;
+  transform: translateY(-50%);
+}
+
+.brilho-direita {
+  top: 10%;
+  right: -100px;
+  transform: translateY(-50%);
+}
