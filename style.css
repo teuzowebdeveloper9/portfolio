@@ -119,6 +119,9 @@ header {
   .acordion .content{
     display: none;
   }
+  .logo{
+    height: 50px;
+  }
 
   
 @media (max-width: 768px) {

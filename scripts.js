@@ -19,8 +19,11 @@ function switchMode(){
         <img src="images/node.js.png" alt="js"  style="width: 60px; height: 60px;  border-radius: 8px;"> 
         <img src="images/mongo-db.png" alt="js"  style="width: 20px; height: 60px;  border-radius: 8px;"> 
          <img src="images/react.png" alt="js"  style="width: 50px; height: 60px;  border-radius: 8px;"> 
-          <img src="images/spring.png" alt="js"  style="width: 50px; height: 60px;  border-radius: 8px;"> 
-           <img src="images/gituzin.png" alt="js"  style="width: 50px; height: 60px;  border-radius: 8px;"> 
+         <img src="images/spring.png" alt="js"  style="width: 50px; height: 60px;  border-radius: 8px;"> 
+          <img src="images/gituzin.png" alt="js"  style="width: 50px; height: 60px;  border-radius: 8px;"> 
+          <img src="images/typescript.png" alt="js"  style="width: 50px; height: 60px;  border-radius: 8px;"> 
+          <img src="images/vue.png" alt="js"  style="width: 50px; height: 60px;  border-radius: 8px;"> 
+          <img src="images/java.png" alt="js"  style="width: 50px; height: 60px;  border-radius: 8px;"> 
 
        
       </div>
@@ -30,13 +33,14 @@ function switchMode(){
       <h3 style="font-size: 1rem; font-weight: bold; margin-bottom: 1rem;">Habilidades pessoais:</h3>
       <div style="display: flex; justify-content: space-between; border: 1px solid white; border-radius: 1rem; padding: 1rem;">
         <ul style="list-style: disc; padding-left: 1.5rem;">
-          <li>Facilidade com tarefas práticas</li>
+          <li>proatividade</li>
           <li>Comunicação</li>
           <li>Trabalho em Equipe</li>
         </ul>
         <ul style="list-style: disc; padding-left: 1.5rem;">
           <li>Organização</li>
-          <li>Comprometimento com resultados</li>
+          <li>Comprometimento </li>
+          <li>muito esforço todos os dias. </li>
         </ul>
       </div>
     </div>
