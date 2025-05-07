@@ -28,8 +28,8 @@ Se você acredita que posso somar ao seu time, por favor entre em contato:
 📧 mateussoftwaredeveloper@gmail.com
 
 📸 Screenshots
-![alt text](README-IMAGES/image-1.png)
-![alt text](README-IMAGES/image-2.png)
+![image](https://github.com/user-attachments/assets/bb555bad-8ec4-4950-9117-ddf63df64209)
+![image](https://github.com/user-attachments/assets/35f805f2-13bc-4128-9b7b-97c0cf40aaa5)
 ![alt text](README-IMAGES/image-3.png)
 ![image](https://github.com/user-attachments/assets/d605b980-43d5-421a-ac2b-ea8aabd6e417)
 
