@@ -33,6 +33,10 @@ Se você acredita que posso somar ao seu time, por favor entre em contato:
 ![alt text](README-IMAGES/image-3.png)
 ![image](https://github.com/user-attachments/assets/d605b980-43d5-421a-ac2b-ea8aabd6e417)
 
+Refatoração do JavaScript no meu portfólio pessoal
+
+Durante o desenvolvimento do meu portfólio, implementei diversas interações visuais utilizando JavaScript puro. Com o tempo, o arquivo principal chegou a mais de 400 linhas de código, o que comprometeu a organização e a manutenibilidade. Para resolver isso, realizei uma refatoração completa: extraí funções reutilizáveis, modularizei o código em arquivos separados e adotei boas práticas como delegação de eventos e uso de seletores dinâmicos. O resultado foi um código mais limpo, escalável e fácil de entender — sem perder nenhuma funcionalidade original.
+
 🖥️ 
 Feito com esforço 💻
 by teuzowebdeveloper9
