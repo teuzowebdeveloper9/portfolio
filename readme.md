@@ -31,7 +31,6 @@ Se você acredita que posso somar ao seu time, por favor entre em contato:
 ![alt text](README-IMAGES/image-1.png)
 ![alt text](README-IMAGES/image-2.png)
 ![alt text](README-IMAGES/image-3.png)
-![alt text](README-IMAGES/image.png)
 ![image](https://github.com/user-attachments/assets/d605b980-43d5-421a-ac2b-ea8aabd6e417)
 
 🖥️ 
